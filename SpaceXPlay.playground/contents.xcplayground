@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Intro'/>
+        <page name='Scene1'/>
+        <page name='Crash 1'/>
+        <page name='Launch2'/>
+        <page name='Crash 2'/>
+        <page name='Launch 3'/>
+        <page name='Crash 3'/>
+        <page name='Launch 4'/>
+        <page name='Final'/>
+    </pages>
+</playground>
