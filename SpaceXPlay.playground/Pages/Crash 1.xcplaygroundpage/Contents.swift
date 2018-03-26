@@ -3,18 +3,17 @@
  
  # Space
 */
-//Hide
+
+//#-hidden-code
 import PlaygroundSupport
 import UIKit
 
 let vc = Crash1()
+PlaygroundPage.current.liveView = vc
+//#-end-hidden-code
 
-PlaygroundPage.current.liveView = vc.view
-//Hide
-
-//5000
 /*:
- [Try Again](@next)
+ [Let's find another way!](@next)
  
  [Give Up](Final)
  */

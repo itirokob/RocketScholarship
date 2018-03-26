@@ -18,6 +18,8 @@ public class Launch4: SKScene {
     private var text2:SKLabelNode?
     private var textStart:SKLabelNode?
     private var stars:SKEmitterNode?
+    private var arrow:SKSpriteNode?
+    private var earth:SKSpriteNode?
     
     public override func didMove(to view: SKView) {
         
@@ -28,12 +30,16 @@ public class Launch4: SKScene {
         self.text2 = self.childNode(withName: "text2") as? SKLabelNode
         self.textStart = self.childNode(withName: "start") as? SKLabelNode
         self.stars = self.childNode(withName: "stars") as? SKEmitterNode
+        self.arrow = self.childNode(withName: "arrow") as? SKSpriteNode
+        self.earth = self.childNode(withName: "earth") as? SKSpriteNode
         
-        if let text1 = self.text1, let text2 = self.text2, let background2 = self.background2, let stars = self.stars{
+        if let text1 = self.text1, let text2 = self.text2, let background2 = self.background2, let stars = self.stars, let arrow = self.arrow, let earth = self.earth{
             text1.isHidden = true
             text2.isHidden = true
             background2.isHidden = true
+            earth.isHidden = true
             stars.isHidden = true
+            arrow.isHidden = true
         }
     }
     
@@ -53,6 +59,7 @@ public class Launch4: SKScene {
         let textAppear = SKAction.run{
             self.text1!.isHidden = false
             self.text2!.isHidden = false
+            self.arrow?.isHidden = false
         }
         
         let animation = SKAction.sequence([moveup])
@@ -60,6 +67,7 @@ public class Launch4: SKScene {
         self.rocket?.run(animation, completion: {
             self.background2?.isHidden = false
             self.stars?.isHidden = false
+            self.earth?.isHidden = false
             self.rocket?.position = CGPoint(x: 400, y: 0)
             self.rocket?.run(SKAction.sequence([moveMiddle, textAppear]))
         })

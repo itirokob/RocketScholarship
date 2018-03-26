@@ -2,5 +2,10 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/biancaitiroko/Documents/BEPiD-2/Scholarship/RocketPlay/SpaceXPlay.playground/Pages/Scene1.xcplaygroundpage#CharacterRangeLen=68&amp;CharacterRangeLoc=375&amp;EndingColumnNumber=21&amp;EndingLineNumber=30&amp;StartingColumnNumber=0&amp;StartingLineNumber=28&amp;Timestamp=543788175.704092"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

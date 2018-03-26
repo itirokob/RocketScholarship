@@ -9,6 +9,7 @@
         <page name='Launch 3'/>
         <page name='Crash 3'/>
         <page name='Launch 4'/>
+        <page name='Final1'/>
         <page name='Final'/>
     </pages>
 </playground>

@@ -8,35 +8,25 @@
  The price for each gallon is $50 and our rocket holds 200 gallons.
  
 */
-////Hide
+//#-hidden-code
 import PlaygroundSupport
 import UIKit
 
-print(Budget.quantity)
-//Budget.quantity -= 5000
+let vc = JohnLaunch2()
 
-//let vc = Launch2()
-//
-//PlaygroundPage.current.liveView = vc.view
-////Hide
-
+PlaygroundPage.current.liveView = vc
+//#-end-hidden-code
 /*:
 Give the variable fuelQuantityInGallons the quantity so we can launch our rocket!
 */
 
-let fuelQuantityInGallons = 100 //Placeholder aqui
+let fuelQuantityInGallons = /*#-editable-code choose how many gallons*//*#-end-editable-code*/
 
 /*:
 Type launch() to launch our rocket!
 
 */
+/*#-editable-code */"Type launch()"/*#-end-editable-code*/
+
 launch()
-
-//HIDE
-//Budget.quantity -= fuelQuantityInGallons*50
-//HIDE
-
-//print(Budget.quantity)
-
-//Preciso fazer um launch para cada
 //: [Next](@next)

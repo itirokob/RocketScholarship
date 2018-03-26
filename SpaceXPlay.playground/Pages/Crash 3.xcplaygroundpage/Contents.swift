@@ -4,19 +4,16 @@
  ## Budget: $25000 - gallons*500 - 7000
  
 */
-
-//Hide
+//#-hidden-code
 import PlaygroundSupport
 import UIKit
 
 let vc = Crash3()
 
-PlaygroundPage.current.liveView = vc.view
-//Hide
-
-//5000 + 4000
+PlaygroundPage.current.liveView = vc
+//#-end-hidden-code
 /*:
- [Try Again](@next)
+ [We'll find out the problem! Let's do this](@next)
  
  [Give Up](Final)
  */

@@ -16,7 +16,8 @@ public class Launch2: SKScene {
     private var text1:SKLabelNode?
     private var text2:SKLabelNode?
     private var textStart:SKLabelNode?
-    
+    private var arrow:SKSpriteNode?
+
     public override func didMove(to view: SKView) {
         
         self.rocket = self.childNode(withName: "rocket") as? SKSpriteNode
@@ -24,10 +25,12 @@ public class Launch2: SKScene {
         self.text1 = self.childNode(withName: "text") as? SKLabelNode
         self.text2 = self.childNode(withName: "text2") as? SKLabelNode
         self.textStart = self.childNode(withName: "start") as? SKLabelNode
-        
-        if let text1 = self.text1, let text2 = self.text2{
+        self.arrow = self.childNode(withName: "arrow") as? SKSpriteNode
+
+        if let text1 = self.text1, let text2 = self.text2, let arrow = self.arrow{
             text1.isHidden = true
             text2.isHidden = true
+            arrow.isHidden = true
         }
     }
     
@@ -53,6 +56,7 @@ public class Launch2: SKScene {
         let textAppear = SKAction.run{
             self.text1!.isHidden = false
             self.text2!.isHidden = false
+            self.arrow?.isHidden = false
         }
         
         let animation = SKAction.sequence([moveup, explode, wait, remove, textAppear])

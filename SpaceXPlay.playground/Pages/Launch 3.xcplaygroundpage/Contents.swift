@@ -6,21 +6,25 @@
  How much impulse should we give in the separation process?
  
  */
-////Hide
-//import PlaygroundSupport
-//import UIKit
-//
-//let vc = Launch3()
-//
-//PlaygroundPage.current.liveView = vc.view
-////Hide
+//#-hidden-code
+import PlaygroundSupport
+import UIKit
 
+let vc = JohnLaunch3()
+
+PlaygroundPage.current.liveView = vc
+//#-end-hidden-code
 /*:
  Give the impulse in Newtons in impulse variable
  */
-let impulse = 100 //Placeholder aqui
+let impulse = /*#-editable-code */10000/*#-end-editable-code*/
+
+
 /*:
 Call launch function to launch our rocket!
 */
+/*#-editable-code */"Type launch()"/*#-end-editable-code*/
+
+
 launch()
-//: [Next](@next)
+//:[Next](@next)

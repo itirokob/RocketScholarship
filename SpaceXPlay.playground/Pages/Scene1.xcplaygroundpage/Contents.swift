@@ -26,21 +26,24 @@ struct niobium {
  Choose one of the metals above and atribute in composition variable:
 
 */
-let composition = niobium() //Aqui vai ter um placeholder
+//#-editable-code
+let composition = aluminum()
+//#-end-editable-code
 /*:
  When you choose, let's launch our rocket!!!
 */
-//Hide
+//#-hidden-code
 import PlaygroundSupport
 import UIKit
 
 let vc = JonScene()
 
-PlaygroundPage.current.liveView = vc.view
+PlaygroundPage.current.liveView = vc
 
-//Hide
+//#-end-hidden-code
 /*:
 Type launch() to launch our rocket!
 */
 launch()
-//:[Next](@next)
+
+//: [Next](@next)
